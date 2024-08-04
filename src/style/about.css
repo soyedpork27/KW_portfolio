@@ -1,0 +1,197 @@
+
+
+/* PC 미디어 쿼리 시작 */
+@media screen and (min-width : 1024px) {
+  
+  .about-name {
+    font-size : 32px;
+    font-weight : bold;
+    margin-bottom : 80px;
+  }
+  
+  .about_birth01 {
+    margin-left : 80px;
+  }
+  
+  .about_birth02 {
+    margin-left : 30px;
+  }
+
+  .about-content_box {
+
+  }
+
+  .content_title {
+    font-size : 32px;
+    text-align : center;
+  }
+
+  .content_title > .horizontal_line {
+    background-color : #fff;
+    display : inline-block;
+    width : 56%;
+    height : 2px;
+    margin-left : 20px;
+    transform : translateY(18px);
+  }
+
+  .content_text{
+    font-size : 18px;
+    font-weight : bold;
+    line-height : 82px;
+    text-align : center;
+  }
+
+  .skill_box{
+    width : 630px;
+    margin : 0 auto;
+    display : flex;
+    justify-content : space-between;
+  }
+
+  .skill {
+  }
+
+  .skill:hover {
+    animation : shake 1s ease-in-out infinite;
+  }
+
+  @keyframes shake {
+    0%{
+      transform : translateY(0);
+      /* transform : rotateY(0); */
+    }
+    25%{
+      transform : translateY(-10px);
+      /* transform : rotateY(15deg); */
+    }
+    0%{
+      transform : translateY(10px);
+      /* transform : rotateY(-15deg); */
+
+    }
+    0%{
+      transform : translateY(0);
+      /* transform : rotateY(0); */
+
+    }
+  }
+
+  .skill_name {
+    line-height : 82px;
+    font-size : 16px;
+    font-weight : bold;
+    text-align : center;
+  }
+
+  .skill_img {
+    width : 40px;
+    display : block;
+    margin : 0 auto;
+  }
+
+
+
+
+}
+
+/* 모바일 시작 */
+@media screen and (max-width : 1023px) {
+
+  .about-name {
+    font-size : 20px;
+    font-weight : bold;
+    margin-bottom : 40px;
+  }
+  
+  .about_birth01 {
+    /* margin-left : 80px; */
+    display : none;
+  }
+  
+  .about_birth02 {
+    /* margin-left : 30px; */
+    display : none;
+  }
+
+  .about-content_box {
+    margin-bottom : 32px;
+  }
+
+  .content_title {
+    font-size : 22px;
+    text-align : center;
+  }
+
+  .content_title > .horizontal_line {
+    /* background-color : #fff;
+    display : inline-block;
+    width : 56%;
+    height : 2px;
+    margin-left : 20px;
+    transform : translateY(18px); */
+    display : none;
+  }
+
+  .content_text{
+    font-size : 18px;
+    font-weight : bold;
+    line-height : 30px;
+    text-align : center;
+    margin-top : 32px;
+  }
+
+  .skill_box{
+    width : 100%;
+    margin : 0 auto;
+    display : flex;
+    justify-content : space-between;
+  }
+
+  .skill {
+  }
+
+  .skill:hover {
+    animation : shake 1s ease-in-out infinite;
+  }
+
+  @keyframes shake {
+    0%{
+      transform : translateY(0);
+      /* transform : rotateY(0); */
+    }
+    25%{
+      transform : translateY(-10px);
+      /* transform : rotateY(15deg); */
+    }
+    0%{
+      transform : translateY(10px);
+      /* transform : rotateY(-15deg); */
+
+    }
+    0%{
+      transform : translateY(0);
+      /* transform : rotateY(0); */
+
+    }
+  }
+
+  .skill_name {
+    line-height : 60px;
+    font-size : 14px;
+    font-weight : bold;
+    text-align : center;
+  }
+
+  .skill_img {
+    width : 28px;
+    display : block;
+    margin : 0 auto;
+  }
+
+}
+
+/* 스마트폰 시작 */
+@media screen and (max-width : 500px) {
+
+}

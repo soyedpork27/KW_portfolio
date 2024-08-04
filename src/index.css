@@ -1,13 +1,102 @@
+
+
+*{
+  margin : 0;
+  padding : 0;
+}
+
+ul, ol, li {
+  list-style : none;
+}
+
+a{
+  color : #fff;
+  text-decoration : none;
+}
+
+img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  /* user-drag: none; */
+}
+
+
+@font-face {
+  font-family: 'SUIT';
+  src: url('./asset/SUIT/SUIT-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SUIT';
+  src: url('./asset/SUIT/SUIT-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Menlo';
+  src: url('./asset/Menlo/Menlo-Regular.ttf');
+}
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'SUIT', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color : #fff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+
+/* ------------------------------------------------------ */
+
+
+.bg_text{
+  font-family : 'Menlo';
+  font-size : 14px;
+}
+
+.purple{
+  color : #CC76D1;
+}
+
+.navy {
+  color : #679AD1;
+}
+
+.blue {
+  color : #AADAFA;
+}
+
+.white {
+  color : #D4D4D4;
+}
+
+.brown {
+  color : #C5947C;
+}
+
+.beige {
+  color : #DCDCAF;
+}
+
+.yellow{
+  color : #F9D849;
 }
