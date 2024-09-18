@@ -1,6 +1,6 @@
-import React, {useContext} from 'react';
+import React from 'react';
 
-import { modalContext } from './modalContext/modalContext';
+// import { modalContext } from './modalContext/modalContext';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -8,7 +8,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './Home';
 import Index from './Index';
 import Project from './Project';
-import About from './About';
 
 const router = createBrowserRouter([{
   path : '/',
@@ -21,19 +20,15 @@ const router = createBrowserRouter([{
     {
       path : '/project',
       element : <Project />
-    },
-    {
-      path : '/about',
-      element : <About />
-    },
+    }
   ]
 }]);
 
 function Router(props) {
 
-  const {isModalUse} = useContext(modalContext);
+  // const {isModalUse} = useContext(modalContext);
 
-  console.log(isModalUse);
+  // console.log(isModalUse);
 
   return (
     <>

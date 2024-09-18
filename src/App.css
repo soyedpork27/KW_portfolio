@@ -51,7 +51,8 @@ main{
   }
 
   header {
-    width : 448px;
+    /* width : 448px; */
+    width : 292px;
     height : 61px;
     position : absolute;
     left : 0;
@@ -118,17 +119,17 @@ main{
   }
 
   .content-frame_wrap{
-    width : calc(50% - 1px);
-    height : 400px;
-    border-right : 2px solid #fff;
-    padding : 20px;
+    width : 17%;
+    aspect-ratio : 1 / 1;
+    /* padding : 20px; */
     box-sizing : border-box;
     text-align : center;
   }
 
   .imgFrame{
-    width : 360px;
-    height : 360px;
+    width : 100%;
+    aspect-ratio : 1 / 1;
+    /* height : 360px; */
     position : relative;
   }
 
@@ -151,14 +152,19 @@ main{
     position : absolute;
   }
 
+  .front > img{
+    width : 100%;
+  }
+
   .front_text {
     position : absolute;
+    width : 100%;
     left : 50%;
-    bottom : 8px;
+    top :calc(100% + 6px);
     transform : translate(-50%);
-    color : #000;
+    color : #fff;
     font-weight : bold;
-    font-size : 18px;
+    font-size : 12px;
     animation : blink 2s infinite;
   }
 
@@ -196,11 +202,11 @@ main{
   /* Home 우측 텍스트 영역 시작 */
 
   .content-text_wrap{
-    width : 50%;
-    height : 400px;
+    width : 80%;
+    /* height : 400px; */
   }
 
-  .name {
+  /* .name {
     font-size : 32px;
     font-weight : bold;
     text-align : center;
@@ -212,12 +218,78 @@ main{
     font-weight : bold;
     text-align : center;
     padding-top : 20px;
+  } */
+
+  /* 홈 화면 설명 문구 p태그 */
+  .home-introduce{
+    font-size : 16px;
+    padding-left : 12px;
+    line-height : 22px;
+    color : #cdcdcd;
+  }
+
+  .home-introduce_paragraph{
+    margin-bottom : 12px;
+  }
+
+  /* 강조 span 태그 */
+  .strong {
+    /* color : rgb(227, 60, 60); */
+    color : rgb(255, 67, 67);
+    /* color : #fff; */
+    font-weight : bold;
+  }
+
+  .home-etc_wrap{
+    margin-top : 40px;
+    width : 100%;
+    display : flex;
+    flex-wrap : wrap;
+    justify-content : space-between;
+    border-top : 2px solid #fff;
+  }
+
+  .etc_box{
+    width : calc(100% / 3);
+    margin-top : 20px;
+  }
+
+  .etc-title{
+    margin-top : 20px;
+    font-weight : bold;
+  }
+
+  .skill_wrap {
+    padding : 20px 0 0 60px;
+  }
+
+  .skill_wrap > li{
+    list-style :disc;
+    font-size : 20px;
+    line-height : 32px;
+    display : flex;
+    align-items : center;
+  }
+  .skill_img {
+    height : 22px;
+    margin-right : 14px ;
+    display : block;
+    /* padding-top : 4px; */
+    /* display : inlblock; */
+    /* margin : 0 auto; */
   }
 
   .text-animate_wrap{
+    width : 100%;
     display : flex;
     margin-top : 20px;
-    padding-left : 100px;
+  }
+
+  .char_txt{
+    font-size : 12px;
+    font-weight : bold;
+    text-align : center;
+    color : #ccc;
   }
 
   .gif{
@@ -233,6 +305,23 @@ main{
     font-size : 18px;
     font-weight : bold;
     margin-top : 16px;
+  }
+
+  .history_wrap {
+    margin-top : 20px;
+  }
+
+  .history_wrap > li {
+    margin-top : 12px;
+    text-align : center;
+    font-size : 18px;
+  }
+
+  .his_date{
+    font-size : 14px;
+    font-weight : normal;
+    color : #ccc;
+    margin-top : 4px;
   }
 
 
@@ -258,10 +347,20 @@ main{
   }
 
   .blog_link {
-    font-size : 18px;
+    font-size : 16px;
     font-weight : bold;
+    color : #ccc;
+  }
+
+  .blog_link:hover {
+    color : #28e5ff;
   }
   
+  .service-icon{
+    /* color : #28e5ff; */
+    color : #28e5ff;
+    font-size : 28px;
+  }
 
 
 
@@ -378,6 +477,7 @@ main{
 
   header {
     width : 448px;
+    /* width : 292px; */
     height : 61px;
     position : absolute;
     left :16px;
@@ -841,4 +941,46 @@ main{
   }
 
 
+}
+
+
+.service-title{
+  animation : 2s neonBlink infinite ;
+}
+
+@keyframes neonBlink {
+  0% {
+    color : gold;
+    text-shadow: 0px 0px 20px #ff0;
+  }
+  49%{
+    color : gold;
+    text-shadow: 0px 0px 20px #ff0;
+  }
+  50% {
+    color : #333;
+    text-shadow : none;
+  }
+  51%{
+    color : gold;
+    text-shadow: 0px 0px 20px #ff0;
+  }
+
+  58%{
+    color : gold;
+    text-shadow: 0px 0px 20px #ff0;
+  }
+  59%{
+    color : #333;
+    text-shadow : none;
+  }
+  60%{
+    color : gold;
+    text-shadow: 0px 0px 20px #ff0;
+  }
+
+  100% {
+    color : gold;
+    text-shadow: 0px 0px 20px #ff0;
+  }
 }

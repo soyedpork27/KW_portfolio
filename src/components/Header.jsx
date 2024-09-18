@@ -13,15 +13,17 @@ function Header({props}) {
       text : 'Home',
       to : '/'
     },
-    {
-      text : 'About Me',
-      to : '/About'
-    },
+    
     {
       text : 'Project',
       to : '/project'
     }
   ];
+
+  // {
+  //  text : 'About Me',
+  //  to : '/About'
+  // },
 
   const select = {
     list : {

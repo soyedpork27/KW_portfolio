@@ -1,9 +1,9 @@
 import {createContext, useState} from 'react';
 
-
-
+// 1. context 생성
 export const modalContext = createContext();
 
+// 2. contextProvider 생성
 export const ModalProvider = ({children}) =>{
 
   const [isModalUse, setIsModalUse] = useState(false);

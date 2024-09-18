@@ -6,16 +6,14 @@ import '../style/project.css';
 
 function Project(props) {
 
-  const {handleModalUse } = useContext(modalContext);
+  const {handleModalUse} = useContext(modalContext);
 
   const handleProjectModal = (_,i) => {
     handleModalUse(i.id);
   }
 
-
   const [tab, setTab] = useState(0);
   
-
   const tabList = ['전체', '개인' , '팀'];
 
   const selected = {
