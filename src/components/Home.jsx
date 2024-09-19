@@ -21,11 +21,13 @@ function Home(props) {
           <div className='imgFrame'>
             <div className='flip_card'>
               <div className='front'>
-                <img src={`${process.env.PUBLIC_URL}/images/char.png`} alt="짱구 이미지" />
+                <div className='front-img_box'>
+                  <img src={`${process.env.PUBLIC_URL}/images/id.jpeg`} alt="내 이미지" />
+                </div>
                 <p className='front_text'>마우스를 올려보세요 ~_~</p>
               </div>
               {/* 아래 이미지 사진으로! */}
-              <img src={`${process.env.PUBLIC_URL}/logo192.png`} alt="" className='back' />
+              <img src={`${process.env.PUBLIC_URL}/images/char.png`} alt="" className='back' />
             </div>
           </div>
           

@@ -74,7 +74,11 @@ function Modal(props) {
 
         </nav>
 
-        <a href={`${data.link}`} title="모달제목 바로가기" target='_blank' rel="noreferrer" className='modal_link' >홈페이지 바로가기</a>
+        <div className='modal-link_box'>
+          <a href={`${data.link}`} title="모달제목 바로가기" target='_blank' rel="noreferrer" className='modal_link' >홈페이지 바로가기</a>
+
+          <a href={`${data.desc_link}`} title="프로젝트 상세설명 바로가기" target='_blank' rel='noreferrer' className='modal_link'  >상세설명 보기</a>
+        </div>
 
 
       </div>

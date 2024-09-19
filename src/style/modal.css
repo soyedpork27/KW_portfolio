@@ -139,6 +139,15 @@
 
 
 
+  .modal-link_box {
+    display : flex;
+    justify-content : center;
+    gap : 32px;
+
+    position : absolute;
+    width : 100%;
+    bottom : 16px;
+  }
 
 
 .modal_link {
@@ -153,11 +162,11 @@
   border : 2px solid #fff;
   border-radius : 10px;
 
-  position : absolute;
+  /* position : absolute;
   left : 50%;
-  bottom : 16px;
+  bottom : 16px; */
 
-  transform : translateX(-50%);
+  /* transform : translateX(-50%); */
 
 }
 
@@ -311,29 +320,39 @@
   }
   
   
-  
-  
-  
-  
-  .modal_link {
-    display : block;
-  
-    width : 140px;
-    height : 40px;
-  
-    line-height : 40px;
-    text-align : center;
-  
-    border : 2px solid #fff;
-    border-radius : 10px;
-  
+  .modal-link_box {
+    display : flex;
+    justify-content : center;
+    gap : 32px;
+
+    box-sizing: border-box;
+
+
     position : absolute;
-    left : 50%;
-    bottom : 32px;
-  
-    transform : translateX(-50%);
-  
+    width : calc(100% - 32px);
+    bottom : 16px;
   }
+
+
+.modal_link {
+  display : block;
+
+  width : 140px;
+  height : 40px;
+
+  line-height : 40px;
+  text-align : center;
+
+  border : 2px solid #fff;
+  border-radius : 10px;
+
+  /* position : absolute;
+  left : 50%;
+  bottom : 16px; */
+
+  /* transform : translateX(-50%); */
+
+}
   
   
   .modal_link:hover {
@@ -376,21 +395,9 @@
   
   }
 
-  .modal_link {
-    display : block;
-  
-    width : 140px;
-    height : 40px;
-  
-    line-height : 40px;
-    text-align : center;
-  
-    border : 2px solid #fff;
-    border-radius : 10px;
-  
-  
-    transform : translateX(-50%);
-  
+  .modal_title {
+    width : calc(100% - 64px);
+    margin : 0 auto;
   }
 
 
