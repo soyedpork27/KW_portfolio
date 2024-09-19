@@ -166,7 +166,7 @@ function Home(props) {
           <div className='content-link_wrap'>
             <div className='content-link_box'>
 
-              <a href="https://velog.io/@k_warrior27/posts" target='_blank' rel="noreferrer" title='서비스 바로가기' className='link_text' > 
+              <a href="https://kwskanban.netlify.app/" target='_blank' rel="noreferrer" title='서비스 바로가기' className='link_text' > 
                 <BsFillKanbanFill className='service-icon' />
                 <span className='blog_link'>
                   KeyBoardWarrior의 칸반보드
