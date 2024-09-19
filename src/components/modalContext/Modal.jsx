@@ -23,7 +23,8 @@ function Modal(props) {
         const getData = res.projects.filter(i => i.id===modalData)[0];
 
         setData(getData);
-      });
+      })
+      .catch(console.info);
   },[modalData]);
 
 
