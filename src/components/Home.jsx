@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import FlipText from './Home/FlipText';
 
 import { BsFillKanbanFill } from "react-icons/bs";
@@ -8,6 +8,29 @@ function Home(props) {
 
   // 공부중인 텍스트 리스트
   const texts = ['React.js', 'Node.js', 'MySQL', 'REACT-NATIVE'];
+
+  const [flipTextSize, setFlipTextSize] = useState(24);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 500) {
+        // 500px 이하일 때 사이즈 20으로 변경
+        setFlipTextSize(20);
+      } else {
+        // 500px 이상일 때 사이즈 24
+        setFlipTextSize(24);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+
 
   return (
     <div className='page'>
@@ -54,8 +77,9 @@ function Home(props) {
               더 좋은 사용자 경험을 제공하기 위해 서비스를 직접 만들고 사용해보며 능력을 발전시키고 있습니다.
               </span>
             </p>
-
-            저의 포트폴리오를 보러 와 주셔서 감사합니다.
+            <p className='home-introduce_paragraph'>
+              저의 포트폴리오를 보러 와 주셔서 감사합니다.
+            </p>
           </div>
 
         </div>
@@ -101,7 +125,7 @@ function Home(props) {
               <img src={`${process.env.PUBLIC_URL}/images/char01.gif`} alt="" className='gif' />
             </div>
 
-            <FlipText texts={texts} size={24} sec={2000} />
+            <FlipText texts={texts} size={flipTextSize} sec={2000} />
           </div>
 
         </article>

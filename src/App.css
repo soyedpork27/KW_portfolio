@@ -544,28 +544,23 @@ main{
 
   /* Home 좌측 이미지 영역 시작 */
   .home-content_wrap{
-
-    /* display : flex;
+    display : flex;
     justify-content: space-between;
-    margin-top : 50px; */
-
-    display : block;
+    margin-top : 50px;
   }
 
   .content-frame_wrap{
-    /* width : calc(50% - 1px);
-    height : 400px;
-    border-right : 2px solid #fff;
-    padding : 20px;
+    width : 150px;
+    aspect-ratio : 1 / 1;
+    /* padding : 20px; */
     box-sizing : border-box;
-    text-align : center; */
-
-    display : none;
+    text-align : center;
   }
 
   .imgFrame{
-    width : 360px;
-    height : 360px;
+    width : 100%;
+    aspect-ratio : 1 / 1;
+    /* height : 360px; */
     position : relative;
   }
 
@@ -578,6 +573,7 @@ main{
   }
 
   .imgFrame:hover .flip_card{
+
     transform : rotateY(180deg);
   }
 
@@ -587,14 +583,25 @@ main{
     position : absolute;
   }
 
+  .front-img_box{
+    width : 100%;
+    height : 100%;
+    overflow : hidden;
+  }
+
+  .front img{
+    width : 100%;
+  }
+
   .front_text {
     position : absolute;
+    width : 100%;
     left : 50%;
-    bottom : 8px;
+    top :calc(100% + 6px);
     transform : translate(-50%);
-    color : #000;
+    color : #fff;
     font-weight : bold;
-    font-size : 18px;
+    font-size : 12px;
     animation : blink 2s infinite;
   }
 
@@ -627,15 +634,22 @@ main{
   }
 
 
-  /* HOME 좌측 이미지 영역 끝 */
-
-
   /* Home 우측 텍스트 영역 시작 */
 
   .content-text_wrap{
-    width : 100%;
+    width : calc(100% - 150px);
     /* height : 400px; */
+    padding-left : 8px;
   }
+
+  .home-introduce{
+    /* font-size : 16px;
+    padding-left : 12px;
+    line-height : 22px;
+    color : #cdcdcd; */
+    /* padding-top : 16px; */
+  }
+
 
   .name {
     font-size : 32px;
@@ -651,12 +665,66 @@ main{
     padding-top : 20px;
   }
 
-  .text-animate_wrap{
+  /* 강조 span 태그 */
+  .strong {
+    /* color : rgb(227, 60, 60); */
+    color : rgb(255, 67, 67);
+    /* color : #fff; */
+    font-weight : bold;
+  }
+
+
+  .home-etc_wrap{
+    margin-top : 40px;
+    width : 100%;
     display : flex;
-    /* margin-top : 20px;
-    padding-left : 100px; */
-    width : 40%;
-    margin : 20px auto 0 auto;
+    flex-wrap : wrap;
+    justify-content : space-between;
+    border-top : 2px solid #fff;
+    gap : 8px;
+  }
+
+  .etc_box{
+    width : calc( (100% / 2) - 8px );
+    margin-top : 20px;
+  }
+
+  .etc-title{
+    margin-top : 20px;
+    font-weight : bold;
+  }
+
+  .skill_wrap {
+    padding : 20px 0 0 60px;
+  }
+
+  .skill_wrap > li{
+    list-style :disc;
+    font-size : 20px;
+    line-height : 32px;
+    display : flex;
+    align-items : center;
+  }
+  .skill_img {
+    height : 22px;
+    margin-right : 14px ;
+    display : block;
+    /* padding-top : 4px; */
+    /* display : inlblock; */
+    /* margin : 0 auto; */
+  }
+
+  .text-animate_wrap{
+    width : 100%;
+    display : flex;
+    margin-top : 20px;
+  }
+
+  .char_txt{
+    font-size : 12px;
+    font-weight : bold;
+    text-align : center;
+    color : #ccc;
   }
 
   .gif{
@@ -674,6 +742,22 @@ main{
     margin-top : 16px;
   }
 
+  .history_wrap {
+    margin-top : 20px;
+  }
+
+  .history_wrap > li {
+    margin-top : 12px;
+    text-align : center;
+    font-size : 18px;
+  }
+
+  .his_date{
+    font-size : 14px;
+    font-weight : normal;
+    color : #ccc;
+    margin-top : 4px;
+  }
 
 
   .content-link_wrap {
@@ -698,9 +782,22 @@ main{
   }
 
   .blog_link {
-    font-size : 18px;
+    font-size : 16px;
     font-weight : bold;
+    color : #ccc;
   }
+
+  .blog_link:hover {
+    color : #28e5ff;
+  }
+  
+  .service-icon{
+    /* color : #28e5ff; */
+    color : #28e5ff;
+    font-size : 28px;
+  }
+
+
 
 
 
@@ -709,7 +806,7 @@ main{
   .ticker-wrap {
     width : 100%;
     overflow : hidden;
-    margin-top : 32px;
+    margin-top : 16px;
   }
 
   .ticker-title {
@@ -780,10 +877,6 @@ main{
   }
 
 
-
-/* 작업중인 영역 */
-
-
 }
 
 
@@ -843,6 +936,30 @@ main{
   .page {
     height : calc(100vh - 154px);
     max-height : 560px;
+    padding : 22px;
+  }
+
+  .home-content_wrap{
+    margin-top : 16px;
+  }
+
+  .content-frame_wrap{
+    /* width : 150px;
+    aspect-ratio : 1 / 1;
+    box-sizing : border-box;
+    text-align : center; */
+    display : none;
+  }
+
+  .content-text_wrap{
+    width : 100%;
+    text-indent : 8px;
+  }
+
+  .home-introduce_paragraph{
+    font-size : 14px;
+    line-height : 1.75;
+    margin-top : 4px;
   }
 
 
@@ -860,13 +977,27 @@ main{
     padding-top : 20px;
   }
 
+  .home-etc_wrap{
+    margin-top : 40px;
+    width : 100%;
+    display : block;
+    border-top : 2px solid #fff;
+    gap : 0;
+  }
+
+  .etc_box{
+    width : 100%;
+    padding-bottom : 40px;
+    border-bottom : 2px solid #fff;
+  }
+
 
 
   .text-animate_wrap{
     display : flex;
     /* margin-top : 20px;
     padding-left : 100px; */
-    width : 80%;
+    width : 100%;
     margin : 20px auto 0 auto;
   }
 

@@ -17,13 +17,25 @@
   .text_wrap {
     position : relative;
     width : 300px;
-    margin : 50px 0 0 16px;
+    margin : 64px 0 0 16px;
   }
 
   .text {
     right : 0;
   }
 
+}
+
+@media screen and (max-width : 500px){
+  .text_wrap {
+    position : relative;
+    width : calc(100% - 100px);
+  }
+  .text {
+    font-size : 20px;
+    left : 8px;
+    bottom : -16px;
+  }
 }
 
 
