@@ -639,8 +639,20 @@ main{
   .content-text_wrap{
     width : calc(100% - 150px);
     /* height : 400px; */
-    padding-left : 8px;
+    padding-left : 12px;
   }
+
+  .home-introduce{
+    font-size : 16px;
+    /* padding-left : 12px; */
+    line-height : 22px;
+    color : #cdcdcd;
+  }
+
+  .home-introduce_paragraph{
+    margin-bottom : 6px;
+  }
+
 
   .home-introduce{
     /* font-size : 16px;

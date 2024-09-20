@@ -13,8 +13,8 @@ function Home(props) {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 500) {
-        // 500px 이하일 때 사이즈 20으로 변경
+      if (window.innerWidth <= 1024) {
+        // 1024px 이하일 때 사이즈 20으로 변경
         setFlipTextSize(20);
       } else {
         // 500px 이상일 때 사이즈 24

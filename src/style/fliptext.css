@@ -21,7 +21,8 @@
   }
 
   .text {
-    right : 0;
+    left : 8px;
+    bottom : -16px;
   }
 
 }
@@ -32,7 +33,7 @@
     width : calc(100% - 100px);
   }
   .text {
-    font-size : 20px;
+
     left : 8px;
     bottom : -16px;
   }
